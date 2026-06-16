@@ -1,0 +1,137 @@
+{
+  "Nav": {
+    "services": "Services",
+    "gallery": "Gallery",
+    "testimonials": "Reviews",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "callNow": "Call Now",
+    "menu": "Menu",
+    "close": "Close",
+    "writeWhatsapp": "Message on WhatsApp"
+  },
+  "Hero": {
+    "badge": "In Istanbul since 2000 — 25+ years of experience",
+    "titleLead": "We Renovate Your Home & Workplace",
+    "titleHighlight": "with Craftsmanship",
+    "titleTrail": "",
+    "subtitle": "Interior & exterior painting, façade work, roofing and turnkey full renovation. A quarter-century of experience, clean workmanship and a <b>free site survey</b> guaranteed.",
+    "serviceArea": "Service area: Istanbul and surrounding provinces (incl. Kocaeli, Yalova)",
+    "ctaQuote": "Get a Free Survey →",
+    "ctaWhatsapp": "Message on WhatsApp",
+    "floatTitle": "Free Survey",
+    "floatSub": "& written quote",
+    "imageAlt": "Renovated living room"
+  },
+  "Stats": {
+    "yearsLabel": "Years of Experience (since 2000)",
+    "projectsLabel": "Completed Projects",
+    "free": "Free",
+    "freeLabel": "Survey & Quote",
+    "satisfactionLabel": "Customer Satisfaction"
+  },
+  "Services": {
+    "eyebrow": "Our Services",
+    "title": "End-to-end renovation solutions",
+    "subtitle": "One team at your side at every stage — from planning to delivery and clean-up.",
+    "customTitle": "Don't see the service you need?",
+    "customText": "Tell us about your project and we'll offer a tailored solution and a free quote.",
+    "customCta": "Get in Touch →"
+  },
+  "Gallery": {
+    "eyebrow": "Gallery",
+    "title": "Before & After",
+    "subtitle": "Drag the divider to see the transformation yourself.",
+    "beforeLabel": "BEFORE",
+    "afterLabel": "AFTER",
+    "completedTitle": "Completed Projects",
+    "emptyState": "Project photos coming soon.",
+    "openAlt": "Enlarge"
+  },
+  "Process": {
+    "eyebrow": "Process",
+    "title": "Renovation in 4 Steps",
+    "subtitle": "Transparent, planned and on time. You know what's happening from start to finish.",
+    "steps": [
+      {
+        "title": "Free Survey & Quote",
+        "text": "We come to your address, take measurements, listen to your needs and provide a clear quote."
+      },
+      {
+        "title": "Planning & Materials",
+        "text": "We set the schedule and material choices together and clarify every stage."
+      },
+      {
+        "title": "Execution",
+        "text": "Our experienced team delivers the work on time, cleanly and with great care."
+      },
+      {
+        "title": "Handover & Clean-up",
+        "text": "We hand the space over spotless and stay in touch until you're satisfied."
+      }
+    ]
+  },
+  "Testimonials": {
+    "eyebrow": "Reviews",
+    "title": "What our customers say",
+    "emptyState": "No reviews yet. Be the first to leave one!",
+    "leaveReview": "Leave a Review"
+  },
+  "ReviewForm": {
+    "title": "Share your experience",
+    "subtitle": "Your review will be published on the site once approved.",
+    "name": "Full Name",
+    "namePlaceholder": "Your Full Name",
+    "role": "Location / Project (optional)",
+    "rolePlaceholder": "e.g. Kadıköy · Living Room Painting",
+    "rating": "Rating",
+    "message": "Your Review",
+    "messagePlaceholder": "Tell us about your experience working with us...",
+    "submit": "Submit Review",
+    "sending": "Sending...",
+    "success": "Thank you! Your review has been received for approval.",
+    "error": "Something went wrong. Please try again."
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions"
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Write to us for a free survey",
+    "formTitle": "Request a Survey",
+    "formSubtitle": "Enter your details and your message will reach us.",
+    "name": "Full Name",
+    "namePlaceholder": "Your Full Name",
+    "phone": "Phone",
+    "phonePlaceholder": "05xx xxx xx xx",
+    "message": "Your Message",
+    "messagePlaceholder": "What work would you like done? (e.g. full repaint of a 2+1 flat)",
+    "submit": "Send",
+    "submitWhatsapp": "Send via WhatsApp",
+    "sending": "Sending...",
+    "success": "Your request has been received! We'll get back to you shortly.",
+    "error": "Something went wrong. Please try again or call us.",
+    "infoTitle": "Get in Touch Now",
+    "infoSubtitle": "Reach us by phone or WhatsApp; we'll schedule a free same-day survey.",
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "areaNote": "Istanbul (all districts) and surrounding provinces — incl. Kocaeli, Yalova",
+    "freeNote": "Free survey & written quote — no upfront payment"
+  },
+  "Footer": {
+    "tagline": "Craftsmanship since 2000; painting, façade work and turnkey renovation.",
+    "founderLabel": "Founder",
+    "servicesTitle": "Services",
+    "areasTitle": "Service Areas",
+    "contactTitle": "Contact",
+    "areas": ["Istanbul (all districts)", "Kocaeli", "Yalova", "& surrounding provinces"],
+    "whatsappLink": "Message on WhatsApp",
+    "rights": "All rights reserved.",
+    "founderLine": "Founder & Master: Ercan Özcan"
+  },
+  "Common": {
+    "languageName": "English",
+    "switchTo": "Türkçe"
+  }
+}

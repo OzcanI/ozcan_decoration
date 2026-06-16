@@ -1,0 +1,133 @@
+// Özcan Dekorasyon — data model
+// Content that appears on the bilingual site stores both TR and EN variants
+// (…Tr / …En fields). Visitor-written content (testimonials, contact requests)
+// is single-language by nature.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Admin users for the management panel (credentials auth).
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String?
+  passwordHash String
+  role         Role     @default(ADMIN)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+enum Role {
+  ADMIN
+}
+
+/// A draggable before/after comparison shown in the gallery slider.
+model BeforeAfter {
+  id             String   @id @default(cuid())
+  titleTr        String
+  titleEn        String
+  beforeImageUrl String
+  afterImageUrl  String
+  order          Int      @default(0)
+  published      Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([published, order])
+}
+
+/// A single project photo in the "Completed Projects" grid (with lightbox).
+model GalleryProject {
+  id        String   @id @default(cuid())
+  titleTr   String
+  titleEn   String
+  imageUrl  String
+  order     Int      @default(0)
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, order])
+}
+
+/// Customer reviews. Visitor submissions land as PENDING and require approval.
+model Testimonial {
+  id        String            @id @default(cuid())
+  name      String
+  role      String? // location / project, e.g. "Kadıköy · Living Room"
+  text      String
+  rating    Int               @default(5)
+  status    TestimonialStatus @default(PENDING)
+  source    TestimonialSource @default(VISITOR)
+  order     Int               @default(0)
+  createdAt DateTime          @default(now())
+  updatedAt DateTime          @updatedAt
+
+  @@index([status, order])
+}
+
+enum TestimonialStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum TestimonialSource {
+  VISITOR
+  ADMIN
+}
+
+/// Lead captured from the contact form (in addition to the WhatsApp handoff).
+model ContactRequest {
+  id        String        @id @default(cuid())
+  name      String
+  phone     String
+  message   String
+  status    ContactStatus @default(NEW)
+  createdAt DateTime      @default(now())
+
+  @@index([status, createdAt])
+}
+
+enum ContactStatus {
+  NEW
+  CONTACTED
+  ARCHIVED
+}
+
+/// A service card. `icon` is a key resolved to an SVG on the frontend.
+model Service {
+  id        String   @id @default(cuid())
+  titleTr   String
+  titleEn   String
+  descTr    String
+  descEn    String
+  icon      String   @default("paint")
+  order     Int      @default(0)
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, order])
+}
+
+/// A frequently-asked-question entry.
+model Faq {
+  id         String   @id @default(cuid())
+  questionTr String
+  questionEn String
+  answerTr   String
+  answerEn   String
+  order      Int      @default(0)
+  published  Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([published, order])
+}

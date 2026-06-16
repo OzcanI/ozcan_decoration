@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Özcan Dekorasyon — İstanbul Boya Badana, Tadilat, Dış Cephe & Anahtar Teslim Renovasyon</title>
+<meta name="description" content="Özcan Dekorasyon — 2000'den beri İstanbul ve çevresinde iç/dış mekan boya badana, dış cephe mantolama, çatı işleri ve anahtar teslim komple tadilat. Ücretsiz keşif ve teklif. Hemen arayın: 0535 795 09 76.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f7f2e9;--cream2:#efe6d6;--card:#fffdf8;--white:#ffffff;--ink:#2c2722;--ink2:#7a7065;--accent:#bf6a43;--accent2:#efd9c9;--line:#e9dfce;--green:#1fa855;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6}
+h1,h2,h3,h4{font-family:"Poppins",sans-serif;margin:0;line-height:1.14;letter-spacing:-.015em}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,textarea{font:inherit}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes pulseRing{0%{box-shadow:0 10px 26px rgba(31,168,85,.35),0 0 0 0 rgba(31,168,85,.5)}70%{box-shadow:0 10px 26px rgba(31,168,85,.35),0 0 0 16px rgba(31,168,85,0)}100%{box-shadow:0 10px 26px rgba(31,168,85,.35),0 0 0 0 rgba(31,168,85,0)}}
+</style>
+</helmet>
+
+<div style="overflow-x:hidden">
+
+<!-- ============ HEADER ============ -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(247,242,233,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)">
+  <div style="max-width:1180px;margin:0 auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+    <a href="#hero" style="display:flex;align-items:center;gap:11px">
+      <div style="width:42px;height:42px;border-radius:12px;background:var(--ink);color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:Poppins,sans-serif;font-weight:700;font-size:16px">ÖD</div>
+      <div style="display:flex;flex-direction:column;line-height:1.1">
+        <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:18px;color:var(--ink)">Özcan Dekorasyon</span>
+        <span style="font-size:10.5px;letter-spacing:.16em;color:var(--ink2);text-transform:uppercase">Boya · Badana · Tadilat</span>
+      </div>
+    </a>
+
+    <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+      <nav style="display:flex;align-items:center;gap:26px">
+        <sc-for list="{{ navLinks }}" as="link" hint-placeholder-count="5">
+          <a href="{{ link.href }}" style="font-size:15px;font-weight:500;color:var(--ink2)" style-hover="color:var(--ink)">{{ link.label }}</a>
+        </sc-for>
+        <a href="tel:+905357950976" style="display:flex;align-items:center;gap:8px;background:var(--ink);color:var(--cream);padding:11px 18px;border-radius:999px;font-weight:600;font-size:14px" style-hover="background:var(--accent)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l1.6 4-2 1.3a11 11 0 0 0 5 5l1.3-2 4 1.6V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6a2 2 0 0 1 1-2Z"></path></svg>
+          Hemen Ara: 0535 795 09 76
+        </a>
+      </nav>
+    </sc-if>
+
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:center;gap:10px">
+        <a href="tel:+905357950976" aria-label="Ara" style="width:42px;height:42px;border-radius:11px;background:var(--ink);color:var(--cream);display:flex;align-items:center;justify-content:center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l1.6 4-2 1.3a11 11 0 0 0 5 5l1.3-2 4 1.6V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6a2 2 0 0 1 1-2Z"></path></svg>
+        </a>
+        <button onClick="{{ toggleMenu }}" aria-label="Menü" style="width:42px;height:42px;border-radius:11px;background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px">
+          <span style="width:18px;height:2px;background:var(--ink);border-radius:2px"></span>
+          <span style="width:18px;height:2px;background:var(--ink);border-radius:2px"></span>
+          <span style="width:18px;height:2px;background:var(--ink);border-radius:2px"></span>
+        </button>
+      </div>
+    </sc-if>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeMenu }}" style="position:fixed;inset:0;z-index:60;background:rgba(30,26,22,.45);backdrop-filter:blur(4px)">
+    <div onClick="{{ stopProp }}" style="position:absolute;top:0;right:0;bottom:0;width:min(330px,84vw);background:var(--cream);padding:22px;display:flex;flex-direction:column;gap:6px;box-shadow:-20px 0 60px rgba(0,0,0,.22);animation:fadeUp .25s ease both">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+        <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:18px">Menü</span>
+        <button onClick="{{ closeMenu }}" aria-label="Kapat" style="width:38px;height:38px;border-radius:10px;background:var(--white);border:1px solid var(--line);font-size:20px;color:var(--ink2)">✕</button>
+      </div>
+      <sc-for list="{{ navLinks }}" as="link" hint-placeholder-count="5">
+        <a href="{{ link.href }}" onClick="{{ closeMenu }}" style="padding:14px 12px;border-radius:12px;font-weight:600;font-size:17px;color:var(--ink)" style-hover="background:var(--white)">{{ link.label }}</a>
+      </sc-for>
+      <a href="tel:+905357950976" style="margin-top:12px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--ink);color:var(--cream);padding:14px;border-radius:12px;font-weight:600">Hemen Ara: 0535 795 09 76</a>
+      <a href="https://wa.me/905357950976" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;background:var(--green);color:#fff;padding:14px;border-radius:12px;font-weight:600">WhatsApp'tan Yaz</a>
+    </div>
+  </div>
+</sc-if>
+
+<!-- ============ HERO ============ -->
+<section id="hero" style="scroll-margin-top:78px;padding:clamp(40px,6vw,80px) 22px clamp(48px,7vw,84px)">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:clamp(32px,5vw,64px)">
+    <div style="flex:1 1 400px;min-width:300px">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:var(--accent2);color:var(--accent);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;animation:fadeUp .6s ease both">
+        <span style="width:7px;height:7px;border-radius:50%;background:var(--accent)"></span>2000'den beri İstanbul'da — 25+ yıl tecrübe
+      </div>
+      <h1 style="font-size:clamp(2.1rem,5.4vw,3.6rem);font-weight:700;margin:20px 0 0;color:var(--ink);text-wrap:balance;animation:fadeUp .6s ease .06s both">Evinizi ve İş Yerinizi <span style="color:var(--accent)">Ustalıkla</span> Yeniliyoruz</h1>
+      <p style="margin:20px 0 0;font-size:clamp(1rem,1.6vw,1.18rem);color:var(--ink2);max-width:540px;text-wrap:pretty;animation:fadeUp .6s ease .12s both">İç ve dış mekan boya-badana, dış cephe, çatı ve anahtar teslim komple tadilat. Çeyrek asırlık tecrübeyle, temiz işçilik ve <strong style="color:var(--ink)">ücretsiz keşif</strong> garantisiyle.</p>
+      <div style="display:flex;align-items:center;gap:8px;margin:18px 0 0;font-size:14.5px;color:var(--ink2);animation:fadeUp .6s ease .16s both">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="2.6"></circle></svg>
+        Hizmet bölgesi: İstanbul ve çevre iller (Kocaeli, Yalova dahil)
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin:28px 0 0;animation:fadeUp .6s ease .2s both">
+        <a href="#iletisim" style="display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:var(--cream);padding:15px 26px;border-radius:999px;font-weight:600;font-size:16px;box-shadow:0 14px 30px rgba(44,39,34,.22)" style-hover="background:var(--accent)">Ücretsiz Keşif Al →</a>
+        <a href="https://wa.me/905357950976" target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:var(--white);color:var(--ink);border:1.5px solid var(--line);padding:15px 24px;border-radius:999px;font-weight:600;font-size:16px" style-hover="border-color:var(--green);color:var(--green)">
+          <span style="width:9px;height:9px;border-radius:50%;background:var(--green)"></span>WhatsApp'tan Yaz
+        </a>
+      </div>
+    </div>
+
+    <div style="flex:1 1 380px;min-width:280px;position:relative;animation:fadeUp .7s ease .1s both">
+      <div style="position:absolute;width:62%;height:62%;right:-6%;top:-8%;background:var(--accent2);border-radius:50%;filter:blur(46px);opacity:.6;z-index:0"></div>
+      <div style="position:relative;z-index:1;aspect-ratio:4/5;border-radius:26px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px rgba(44,39,34,.16);background:repeating-linear-gradient(135deg,#efe2cd,#efe2cd 15px,#e7d7bd 15px,#e7d7bd 30px);display:flex;align-items:flex-end;padding:18px">
+        <span style="font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:#8a8275;background:rgba(255,255,255,.78);padding:7px 11px;border-radius:9px">[ hero görseli — yenilenmiş salon ]</span>
+      </div>
+      <div style="position:absolute;z-index:2;left:-14px;bottom:26px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:0 16px 34px rgba(44,39,34,.16);display:flex;align-items:center;gap:12px">
+        <div style="width:44px;height:44px;border-radius:12px;background:var(--accent2);color:var(--accent);display:flex;align-items:center;justify-content:center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+        </div>
+        <div style="line-height:1.2">
+          <div style="font-family:Poppins,sans-serif;font-weight:700;font-size:18px;color:var(--ink)">Ücretsiz Keşif</div>
+          <div style="font-size:12.5px;color:var(--ink2)">& yazılı fiyat teklifi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section ref="{{ setStatsRef }}" style="background:var(--ink);color:var(--cream)">
+  <div style="max-width:1080px;margin:0 auto;padding:clamp(34px,5vw,52px) 22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px">
+    <div style="text-align:center;padding:8px">
+      <div style="font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(2rem,4.4vw,2.9rem);color:var(--accent)">{{ stat1 }}+</div>
+      <div style="font-size:14px;opacity:.78;margin-top:4px">Yıl Tecrübe<br>(2000'den beri)</div>
+    </div>
+    <div style="text-align:center;padding:8px">
+      <div style="font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(2rem,4.4vw,2.9rem);color:var(--accent)">{{ stat2 }}+</div>
+      <div style="font-size:14px;opacity:.78;margin-top:4px">Tamamlanan<br>Proje</div>
+    </div>
+    <div style="text-align:center;padding:8px">
+      <div style="font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(2rem,4.4vw,2.9rem);color:var(--accent)">Ücretsiz</div>
+      <div style="font-size:14px;opacity:.78;margin-top:4px">Keşif &<br>Teklif</div>
+    </div>
+    <div style="text-align:center;padding:8px">
+      <div style="font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(2rem,4.4vw,2.9rem);color:var(--accent)">%{{ stat3 }}</div>
+      <div style="font-size:14px;opacity:.78;margin-top:4px">Müşteri<br>Memnuniyeti</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="hizmetler" style="scroll-margin-top:78px;padding:clamp(56px,8vw,96px) 22px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:620px;margin:0 auto 44px">
+      <div style="font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase">Hizmetlerimiz</div>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin:12px 0 0;color:var(--ink)">Uçtan uca renovasyon çözümleri</h2>
+      <p style="margin:14px 0 0;color:var(--ink2);font-size:17px">Tek bir ekiple, planlamadan teslimat ve temizliğe kadar her aşamada yanınızdayız.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px">
+
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-5px);box-shadow:0 22px 44px rgba(44,39,34,.12)">
+        <div style="width:54px;height:54px;border-radius:15px;background:var(--accent2);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="13" height="6" rx="1.5"></rect><path d="M16 7h3a2 2 0 0 1 2 2v1.5a2 2 0 0 1-2 2h-7"></path><path d="M12 12.5V15"></path><rect x="10" y="15" width="4" height="5.5" rx="1"></rect></svg>
+        </div>
+        <h3 style="font-size:19px;color:var(--ink)">İç & Dış Mekan Boya-Badana</h3>
+        <p style="margin:9px 0 0;color:var(--ink2);font-size:15px">Saten, silikonlu ve dekoratif boya uygulamaları; pürüzsüz, lekesiz ve uzun ömürlü bir sonuç.</p>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-5px);box-shadow:0 22px 44px rgba(44,39,34,.12)">
+        <div style="width:54px;height:54px;border-radius:15px;background:var(--accent2);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"></path><path d="M5 10v9h14v-9"></path><path d="M10 19v-5h4v5"></path></svg>
+        </div>
+        <h3 style="font-size:19px;color:var(--ink)">Anahtar Teslim Renovasyon</h3>
+        <p style="margin:9px 0 0;color:var(--ink2);font-size:15px">Daire ve iş yerlerinizi tek elden, baştan sona yeniliyoruz. Tasarımdan teslimata komple çözüm.</p>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-5px);box-shadow:0 22px 44px rgba(44,39,34,.12)">
+        <div style="width:54px;height:54px;border-radius:15px;background:var(--accent2);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"></rect><path d="M9 3v18M14 3v18M4 9h16M4 15h16"></path></svg>
+        </div>
+        <h3 style="font-size:19px;color:var(--ink)">Dış Cephe & Mantolama</h3>
+        <p style="margin:9px 0 0;color:var(--ink2);font-size:15px">Cephe boyası ve ısı yalıtımı (mantolama) ile binanıza modern bir görünüm, tasarrufla birlikte.</p>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-5px);box-shadow:0 22px 44px rgba(44,39,34,.12)">
+        <div style="width:54px;height:54px;border-radius:15px;background:var(--accent2);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 12 5l10 7"></path><path d="M5 12v7h14v-7"></path><path d="M2 12h20"></path></svg>
+        </div>
+        <h3 style="font-size:19px;color:var(--ink)">Çatı İşleri</h3>
+        <p style="margin:9px 0 0;color:var(--ink2);font-size:15px">Çatı onarımı, kiremit aktarma ve su yalıtımı. Sızıntı ve nem sorunlarına kalıcı çözüm.</p>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-5px);box-shadow:0 22px 44px rgba(44,39,34,.12)">
+        <div style="width:54px;height:54px;border-radius:15px;background:var(--accent2);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="8" rx="1.5"></rect><path d="M7 8v3M12 8v4M17 8v3"></path></svg>
+        </div>
+        <h3 style="font-size:19px;color:var(--ink)">Komple Tadilat</h3>
+        <p style="margin:9px 0 0;color:var(--ink2);font-size:15px">Alçıpan, zemin, mutfak-banyo, elektrik ve su tesisatı dahil komple tadilat işleri.</p>
+      </div>
+
+      <div style="background:linear-gradient(140deg,var(--ink),#3a332c);color:var(--cream);border-radius:20px;padding:28px;display:flex;flex-direction:column;justify-content:center">
+        <h3 style="font-size:20px;color:var(--cream)">Aradığınız hizmet listede yok mu?</h3>
+        <p style="margin:9px 0 18px;font-size:15px;opacity:.8">Projenizi anlatın, size özel çözüm ve ücretsiz teklif sunalım.</p>
+        <a href="#iletisim" style="align-self:flex-start;background:var(--accent);color:#fff;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px" style-hover="background:#fff;color:var(--ink)">Bize Ulaşın →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY / BEFORE-AFTER ============ -->
+<section id="galeri" style="scroll-margin-top:78px;padding:clamp(56px,8vw,96px) 22px;background:var(--cream2)">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:620px;margin:0 auto 40px">
+      <div style="font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase">Galeri</div>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin:12px 0 0;color:var(--ink)">Önce & Sonra</h2>
+      <p style="margin:14px 0 0;color:var(--ink2);font-size:17px">Aradaki çizgiyi sürükleyerek dönüşümü kendiniz görün.</p>
+    </div>
+
+    <div style="max-width:900px;margin:0 auto">
+      <div ref="{{ baRef }}" onPointerDown="{{ onBaDown }}" onPointerMove="{{ onBaMove }}" onPointerUp="{{ onBaUp }}" style="position:relative;width:100%;aspect-ratio:16/10;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 50px rgba(44,39,34,.14);cursor:ew-resize;user-select:none;touch-action:none">
+        <!-- base: SONRA (after) -->
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,#eef0e2,#eef0e2 17px,#e3e8d2 17px,#e3e8d2 34px);display:flex;align-items:center;justify-content:center">
+          <span style="font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:#7f8568;background:rgba(255,255,255,.7);padding:8px 12px;border-radius:9px">[ sonra · yenilenmiş mekan ]</span>
+        </div>
+        <!-- overlay: ÖNCE (before), clipped from left -->
+        <div style="position:absolute;inset:0;clip-path:inset(0 {{ baInset }}% 0 0);background:repeating-linear-gradient(135deg,#d6d3cb,#d6d3cb 17px,#cbc8c0 17px,#cbc8c0 34px);display:flex;align-items:center;justify-content:center">
+          <span style="font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:#6f6c64;background:rgba(255,255,255,.7);padding:8px 12px;border-radius:9px">[ önce · eski hâli ]</span>
+        </div>
+        <!-- labels -->
+        <div style="position:absolute;top:14px;left:14px;background:rgba(44,39,34,.82);color:#fff;font-size:12px;font-weight:600;letter-spacing:.06em;padding:6px 12px;border-radius:999px;pointer-events:none">ÖNCE</div>
+        <div style="position:absolute;top:14px;right:14px;background:var(--accent);color:#fff;font-size:12px;font-weight:600;letter-spacing:.06em;padding:6px 12px;border-radius:999px;pointer-events:none">SONRA</div>
+        <!-- handle -->
+        <div style="position:absolute;top:0;bottom:0;left:{{ baPos }}%;width:3px;background:#fff;box-shadow:0 0 0 1px rgba(44,39,34,.1);pointer-events:none;transform:translateX(-1.5px)">
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 6px 18px rgba(44,39,34,.28);display:flex;align-items:center;justify-content:center;color:var(--ink)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-4 5 4 5M15 7l4 5-4 5"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="text-align:center;font-size:clamp(1.3rem,2.6vw,1.7rem);color:var(--ink);margin:56px 0 26px">Tamamlanan Projeler</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px">
+      <sc-for list="{{ gallery }}" as="item" hint-placeholder-count="6">
+        <button onClick="{{ item.open }}" style="position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:repeating-linear-gradient(135deg,#ece3d3,#ece3d3 13px,#e2d6c0 13px,#e2d6c0 26px);display:flex;align-items:flex-end;justify-content:flex-start;padding:12px;transition:transform .2s ease" style-hover="transform:scale(1.02)">
+          <span style="font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;color:#8a8275;background:rgba(255,255,255,.82);padding:6px 10px;border-radius:8px">{{ item.label }}</span>
+          <span style="position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:9px;background:rgba(255,255,255,.85);display:flex;align-items:center;justify-content:center;color:var(--ink)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4h-5a2 2 0 0 0-2 2v5M13 20h5a2 2 0 0 0 2-2v-5M20 4l-7 7M4 20l7-7"></path></svg>
+          </span>
+        </button>
+      </sc-for>
+    </div>
+    <p style="text-align:center;margin:18px 0 0;font-size:13px;color:var(--ink2);font-family:ui-monospace,Menlo,Consolas,monospace">[ yer tutucu görseller — gerçek proje fotoğraflarıyla değiştirilecek ]</p>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<sc-if value="{{ lightboxOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeLightbox }}" style="position:fixed;inset:0;z-index:100;background:rgba(26,22,18,.82);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:22px;animation:fadeUp .2s ease both">
+    <div onClick="{{ stopProp }}" style="position:relative;width:min(900px,100%);aspect-ratio:16/10;border-radius:20px;overflow:hidden;background:repeating-linear-gradient(135deg,#ece3d3,#ece3d3 18px,#e2d6c0 18px,#e2d6c0 36px);display:flex;align-items:center;justify-content:center">
+      <span style="font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;color:#8a8275;background:rgba(255,255,255,.82);padding:9px 14px;border-radius:10px">{{ lightbox.label }}</span>
+      <button onClick="{{ closeLightbox }}" aria-label="Kapat" style="position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.92);color:var(--ink);font-size:20px;display:flex;align-items:center;justify-content:center">✕</button>
+    </div>
+  </div>
+</sc-if>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section style="padding:clamp(56px,8vw,96px) 22px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:620px;margin:0 auto 44px">
+      <div style="font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase">Süreç</div>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin:12px 0 0;color:var(--ink)">4 Adımda Yenileme</h2>
+      <p style="margin:14px 0 0;color:var(--ink2);font-size:17px">Şeffaf, planlı ve zamanında. Baştan sona ne olduğunu bilirsiniz.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px">
+        <div style="font-family:Poppins,sans-serif;font-weight:700;font-size:15px;color:#fff;background:var(--accent);width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:16px">01</div>
+        <h3 style="font-size:18px;color:var(--ink)">Ücretsiz Keşif & Teklif</h3>
+        <p style="margin:8px 0 0;color:var(--ink2);font-size:14.5px">Adresinize gelir, ölçü alır, ihtiyacınızı dinler ve net bir fiyat teklifi sunarız.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px">
+        <div style="font-family:Poppins,sans-serif;font-weight:700;font-size:15px;color:#fff;background:var(--accent);width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:16px">02</div>
+        <h3 style="font-size:18px;color:var(--ink)">Planlama & Malzeme</h3>
+        <p style="margin:8px 0 0;color:var(--ink2);font-size:14.5px">İş takvimini ve malzeme seçimini birlikte belirler, her aşamayı netleştiririz.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px">
+        <div style="font-family:Poppins,sans-serif;font-weight:700;font-size:15px;color:#fff;background:var(--accent);width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:16px">03</div>
+        <h3 style="font-size:18px;color:var(--ink)">Uygulama</h3>
+        <p style="margin:8px 0 0;color:var(--ink2);font-size:14.5px">Deneyimli ekibimizle işi zamanında, temiz ve özenli bir şekilde uygularız.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px">
+        <div style="font-family:Poppins,sans-serif;font-weight:700;font-size:15px;color:#fff;background:var(--accent);width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:16px">04</div>
+        <h3 style="font-size:18px;color:var(--ink)">Teslim & Temizlik</h3>
+        <p style="margin:8px 0 0;color:var(--ink2);font-size:14.5px">Alanı tertemiz teslim eder, memnuniyetinizi alana kadar takipte kalırız.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="referanslar" style="scroll-margin-top:78px;padding:clamp(56px,8vw,96px) 22px;background:var(--cream2)">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:620px;margin:0 auto 44px">
+      <div style="font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase">Referanslar</div>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin:12px 0 0;color:var(--ink)">Müşterilerimiz ne diyor?</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+      <sc-for list="{{ testimonials }}" as="t" hint-placeholder-count="3">
+        <div style="background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;gap:3px">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.4l-5.8 3.05 1.1-6.47L2.6 9.35l6.5-.95z"></path></svg>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.4l-5.8 3.05 1.1-6.47L2.6 9.35l6.5-.95z"></path></svg>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.4l-5.8 3.05 1.1-6.47L2.6 9.35l6.5-.95z"></path></svg>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.4l-5.8 3.05 1.1-6.47L2.6 9.35l6.5-.95z"></path></svg>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.4l-5.8 3.05 1.1-6.47L2.6 9.35l6.5-.95z"></path></svg>
+          </div>
+          <p style="color:var(--ink);font-size:15.5px;line-height:1.65">"{{ t.text }}"</p>
+          <div style="display:flex;align-items:center;gap:12px;margin-top:auto">
+            <div style="width:44px;height:44px;border-radius:50%;background:var(--accent2);color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:Poppins,sans-serif;font-weight:700;font-size:16px">{{ t.initial }}</div>
+            <div style="line-height:1.25">
+              <div style="font-family:Poppins,sans-serif;font-weight:600;font-size:15px;color:var(--ink)">{{ t.name }}</div>
+              <div style="font-size:13px;color:var(--ink2)">{{ t.role }}</div>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <p style="text-align:center;margin:18px 0 0;font-size:13px;color:var(--ink2);font-family:ui-monospace,Menlo,Consolas,monospace">[ yer tutucu yorumlar — gerçek müşteri yorumlarıyla değiştirilecek ]</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="sss" style="scroll-margin-top:78px;padding:clamp(56px,8vw,96px) 22px">
+  <div style="max-width:820px;margin:0 auto">
+    <div style="text-align:center;margin:0 auto 40px">
+      <div style="font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase">SSS</div>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin:12px 0 0;color:var(--ink)">Sık Sorulan Sorular</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <sc-for list="{{ faqItems }}" as="item" hint-placeholder-count="5">
+        <div style="background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden">
+          <button onClick="{{ item.toggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px;text-align:left">
+            <span style="font-family:Poppins,sans-serif;font-weight:600;font-size:16.5px;color:var(--ink)">{{ item.q }}</span>
+            <span style="flex-shrink:0;width:30px;height:30px;border-radius:9px;background:var(--accent2);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">{{ item.sign }}</span>
+          </button>
+          <div style="max-height:{{ item.maxH }};opacity:{{ item.op }};overflow:hidden;transition:max-height .3s ease,opacity .3s ease">
+            <p style="padding:0 22px 22px;color:var(--ink2);font-size:15.5px;line-height:1.65">{{ item.a }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="iletisim" style="scroll-margin-top:78px;padding:clamp(56px,8vw,96px) 22px;background:var(--cream2)">
+  <div style="max-width:1100px;margin:0 auto">
+    <div style="text-align:center;max-width:620px;margin:0 auto 44px">
+      <div style="font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase">İletişim</div>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin:12px 0 0;color:var(--ink)">Ücretsiz keşif için bize yazın</h2>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:stretch">
+      <form onSubmit="{{ submitForm }}" style="flex:1 1 360px;min-width:280px;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,4vw,34px);box-shadow:0 18px 40px rgba(44,39,34,.08)">
+        <h3 style="font-size:20px;color:var(--ink);margin-bottom:6px">Keşif Talebi Oluştur</h3>
+        <p style="color:var(--ink2);font-size:14px;margin-bottom:20px">Bilgilerinizi girin, mesajınız WhatsApp üzerinden bize ulaşsın.</p>
+        <label style="display:block;font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:7px">Ad Soyad</label>
+        <input value="{{ fName }}" onInput="{{ onFName }}" placeholder="Adınız Soyadınız" style="width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--white);margin-bottom:16px;outline:none" style-focus="border-color:var(--accent)">
+        <label style="display:block;font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:7px">Telefon</label>
+        <input value="{{ fPhone }}" onInput="{{ onFPhone }}" placeholder="05xx xxx xx xx" style="width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--white);margin-bottom:16px;outline:none" style-focus="border-color:var(--accent)">
+        <label style="display:block;font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:7px">Mesajınız</label>
+        <textarea value="{{ fMsg }}" onInput="{{ onFMsg }}" placeholder="Hangi işi yaptırmak istiyorsunuz? (örn. 2+1 daire komple boya)" rows="4" style="width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--white);margin-bottom:20px;outline:none;resize:vertical;font-family:inherit" style-focus="border-color:var(--accent)"></textarea>
+        <button type="submit" style="width:100%;display:flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:#fff;padding:15px;border-radius:12px;font-weight:600;font-size:16px" style-hover="filter:brightness(1.06)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l1.6 4-2 1.3a11 11 0 0 0 5 5l1.3-2 4 1.6V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6a2 2 0 0 1 1-2Z"></path></svg>
+          WhatsApp'tan Gönder
+        </button>
+      </form>
+
+      <div style="flex:1 1 320px;min-width:280px;background:linear-gradient(150deg,var(--ink),#3a332c);color:var(--cream);border-radius:24px;padding:clamp(24px,4vw,34px);display:flex;flex-direction:column">
+        <h3 style="font-size:20px;color:var(--cream)">Hemen İletişime Geçin</h3>
+        <p style="opacity:.78;font-size:14.5px;margin:8px 0 24px">Telefon veya WhatsApp ile ulaşın; aynı gün ücretsiz keşif planlayalım.</p>
+
+        <a href="tel:+905357950976" style="display:flex;align-items:center;gap:14px;padding:16px;border-radius:14px;background:rgba(255,255,255,.07);margin-bottom:12px" style-hover="background:rgba(255,255,255,.13)">
+          <span style="width:44px;height:44px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l1.6 4-2 1.3a11 11 0 0 0 5 5l1.3-2 4 1.6V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6a2 2 0 0 1 1-2Z"></path></svg>
+          </span>
+          <span style="line-height:1.3">
+            <span style="display:block;font-size:12.5px;opacity:.7">Telefon</span>
+            <span style="display:block;font-family:Poppins,sans-serif;font-weight:600;font-size:18px">0535 795 09 76</span>
+          </span>
+        </a>
+
+        <a href="https://wa.me/905357950976" target="_blank" style="display:flex;align-items:center;gap:14px;padding:16px;border-radius:14px;background:rgba(255,255,255,.07)" style-hover="background:rgba(255,255,255,.13)">
+          <span style="width:44px;height:44px;border-radius:12px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#fff">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l1.6 4-2 1.3a11 11 0 0 0 5 5l1.3-2 4 1.6V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6a2 2 0 0 1 1-2Z"></path></svg>
+          </span>
+          <span style="line-height:1.3">
+            <span style="display:block;font-size:12.5px;opacity:.7">WhatsApp</span>
+            <span style="display:block;font-family:Poppins,sans-serif;font-weight:600;font-size:18px">0535 795 09 76</span>
+          </span>
+        </a>
+
+        <div style="border-top:1px solid rgba(255,255,255,.12);margin-top:22px;padding-top:20px;display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;align-items:flex-start;gap:11px;font-size:14.5px;opacity:.85">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><path d="M20 10c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="2.6"></circle></svg>
+            <span>İstanbul (tüm ilçeler) ve çevre iller — Kocaeli, Yalova dahil</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:11px;font-size:14.5px;opacity:.85">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><path d="M20 6 9 17l-5-5"></path></svg>
+            <span>Ücretsiz keşif & yazılı fiyat teklifi — hiçbir ön ödeme yok</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background:var(--ink);color:var(--cream);padding:clamp(44px,6vw,68px) 22px 28px">
+  <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:36px">
+    <div style="max-width:320px">
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:14px">
+        <div style="width:42px;height:42px;border-radius:12px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Poppins,sans-serif;font-weight:700">ÖD</div>
+        <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:18px;color:var(--cream)">Özcan Dekorasyon</span>
+      </div>
+      <p style="opacity:.72;font-size:14.5px;line-height:1.6">2000'den beri ustalıkla; boya, badana, dış cephe ve anahtar teslim renovasyon. Kurucu: <strong style="color:var(--cream)">Ercan Özcan</strong>.</p>
+      <div style="display:flex;gap:10px;margin-top:18px">
+        <span style="width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:12px;opacity:.7;font-family:ui-monospace,monospace">in</span>
+        <span style="width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:12px;opacity:.7;font-family:ui-monospace,monospace">ig</span>
+        <span style="width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:12px;opacity:.7;font-family:ui-monospace,monospace">fb</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:Poppins,sans-serif;font-weight:600;font-size:15px;margin-bottom:14px">Hizmetler</div>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:14.5px;opacity:.75">
+        <a href="#hizmetler" style-hover="opacity:1;color:var(--accent)">Boya & Badana</a>
+        <a href="#hizmetler" style-hover="opacity:1;color:var(--accent)">Anahtar Teslim Renovasyon</a>
+        <a href="#hizmetler" style-hover="opacity:1;color:var(--accent)">Dış Cephe & Mantolama</a>
+        <a href="#hizmetler" style-hover="opacity:1;color:var(--accent)">Çatı İşleri</a>
+        <a href="#hizmetler" style-hover="opacity:1;color:var(--accent)">Komple Tadilat</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:Poppins,sans-serif;font-weight:600;font-size:15px;margin-bottom:14px">Hizmet Bölgeleri</div>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:14.5px;opacity:.75">
+        <span>İstanbul (tüm ilçeler)</span>
+        <span>Kocaeli</span>
+        <span>Yalova</span>
+        <span>ve çevre iller</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:Poppins,sans-serif;font-weight:600;font-size:15px;margin-bottom:14px">İletişim</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:14.5px;opacity:.85">
+        <a href="tel:+905357950976" style-hover="color:var(--accent)">📞 0535 795 09 76</a>
+        <a href="https://wa.me/905357950976" target="_blank" style-hover="color:var(--accent)">WhatsApp ile yazın</a>
+        <span style="opacity:.7">ozcandekorasyon.com</span>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1180px;margin:36px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;font-size:13px;opacity:.6">
+    <span>© 2026 Özcan Dekorasyon — Tüm hakları saklıdır.</span>
+    <span>Kurucu & Usta: Ercan Özcan · ozcandekorasyon.com</span>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="https://wa.me/905357950976" target="_blank" aria-label="WhatsApp ile yazın" style="position:fixed;right:20px;bottom:20px;z-index:80;width:60px;height:60px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s infinite" style-hover="filter:brightness(1.07)">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l1.6 4-2 1.3a11 11 0 0 0 5 5l1.3-2 4 1.6V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6a2 2 0 0 1 1-2Z"></path></svg>
+</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;accentColor&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#bf6a43&quot;, &quot;options&quot;: [&quot;#bf6a43&quot;, &quot;#b0613a&quot;, &quot;#7c8a5a&quot;, &quot;#5b7a8c&quot;, &quot;#c08a2e&quot;], &quot;tsType&quot;: &quot;string&quot; },
+  &quot;darkColor&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#2c2722&quot;, &quot;options&quot;: [&quot;#2c2722&quot;, &quot;#1f2a37&quot;, &quot;#3a2e26&quot;, &quot;#262b2e&quot;], &quot;tsType&quot;: &quot;string&quot; }
+}">
+class Component extends DCLogic {
+  state = {
+    isMobile: (typeof window !== 'undefined' && window.innerWidth < 860),
+    menuOpen: false,
+    baPos: 50,
+    stat1: 0, stat2: 0, stat3: 0,
+    faqOpen: 0,
+    lightbox: null,
+    fName: '', fPhone: '', fMsg: ''
+  };
+
+  componentDidMount() {
+    this._onResize = () => {
+      const m = window.innerWidth < 860;
+      if (m !== this.state.isMobile) this.setState({ isMobile: m, menuOpen: m ? this.state.menuOpen : false });
+    };
+    window.addEventListener('resize', this._onResize);
+    this.applyTheme();
+  }
+  componentDidUpdate(prev) {
+    if (prev.accentColor !== this.props.accentColor || prev.darkColor !== this.props.darkColor) this.applyTheme();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._onResize);
+    if (this._raf) cancelAnimationFrame(this._raf);
+  }
+
+  applyTheme() {
+    const r = document.documentElement;
+    if (this.props.accentColor) r.style.setProperty('--accent', this.props.accentColor);
+    if (this.props.darkColor) r.style.setProperty('--ink', this.props.darkColor);
+  }
+
+  // ---- animated stats ----
+  setStatsRef = (el) => {
+    if (el && !this._statsObserved && typeof IntersectionObserver !== 'undefined') {
+      this._statsObserved = true;
+      const io = new IntersectionObserver((ents) => {
+        ents.forEach(e => { if (e.isIntersecting) { this.animateStats(); io.disconnect(); } });
+      }, { threshold: 0.3 });
+      io.observe(el);
+    }
+  };
+  animateStats() {
+    const start = performance.now(), dur = 1500, t1 = 25, t2 = 150, t3 = 100;
+    const ease = (x) => 1 - Math.pow(1 - x, 3);
+    const tick = (now) => {
+      const p = Math.min(1, (now - start) / dur), e = ease(p);
+      this.setState({ stat1: Math.round(t1 * e), stat2: Math.round(t2 * e), stat3: Math.round(t3 * e) });
+      if (p < 1) this._raf = requestAnimationFrame(tick);
+    };
+    this._raf = requestAnimationFrame(tick);
+  }
+
+  // ---- before / after slider ----
+  baRef = (el) => { this._baEl = el; };
+  _updateBa(clientX) {
+    if (!this._baEl) return;
+    const r = this._baEl.getBoundingClientRect();
+    let p = ((clientX - r.left) / r.width) * 100;
+    p = Math.max(0, Math.min(100, p));
+    this.setState({ baPos: p });
+  }
+  onBaDown = (e) => { this._baDrag = true; try { e.currentTarget.setPointerCapture(e.pointerId); } catch (_) {} this._updateBa(e.clientX); };
+  onBaMove = (e) => { if (this._baDrag) this._updateBa(e.clientX); };
+  onBaUp = (e) => { this._baDrag = false; try { e.currentTarget.releasePointerCapture(e.pointerId); } catch (_) {} };
+
+  // ---- menu / lightbox ----
+  toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+  closeMenu = () => this.setState({ menuOpen: false });
+  stopProp = (e) => e.stopPropagation();
+  openLightbox = (i) => this.setState({ lightbox: i });
+  closeLightbox = () => this.setState({ lightbox: null });
+
+  // ---- form -> whatsapp ----
+  submitForm = (e) => {
+    e.preventDefault();
+    const { fName, fPhone, fMsg } = this.state;
+    const text = 'Merhaba, ben ' + (fName || '(isim)') + '. Telefon: ' + (fPhone || '(telefon)') + '. ' + (fMsg || 'Ucretsiz kesif talep ediyorum.');
+    window.open('https://wa.me/905357950976?text=' + encodeURIComponent(text), '_blank');
+  };
+
+  renderVals() {
+    const s = this.state;
+    const navLinks = [
+      { label: 'Hizmetler', href: '#hizmetler' },
+      { label: 'Galeri', href: '#galeri' },
+      { label: 'Referanslar', href: '#referanslar' },
+      { label: 'SSS', href: '#sss' },
+      { label: 'İletişim', href: '#iletisim' }
+    ];
+
+    const faqData = [
+      { q: 'Keşif ücretsiz mi?', a: 'Evet. İstanbul ve çevre illerde yerinde keşif ile yazılı fiyat teklifimiz tamamen ücretsizdir; hiçbir ön ödeme alınmaz.' },
+      { q: 'Hangi bölgelere hizmet veriyorsunuz?', a: 'İstanbul\u2019un tüm ilçeleri ile Kocaeli ve Yalova başta olmak üzere çevre illere hizmet veriyoruz.' },
+      { q: 'İşler ne kadar sürer?', a: 'Süre işin kapsamına göre değişir. Tek oda boya genelde 1\u20132 gün, komple daire renovasyonu ortalama 1\u20133 hafta içinde teslim edilir. Net süreyi keşif sonrası belirtiriz.' },
+      { q: 'Garanti veriyor musunuz?', a: 'Evet. İşçilik ve kullanılan malzemeler için garanti veriyoruz; teslim sonrası oluşabilecek sorunlarda yanınızdayız.' },
+      { q: 'Eşyalarım zarar görür mü?', a: 'Hayır. Çalışma öncesi tüm eşyalarınızı örtü ve naylonla koruma altına alır, iş bitiminde alanı tertemiz teslim ederiz.' }
+    ];
+    const faqItems = faqData.map((it, i) => ({
+      q: it.q, a: it.a,
+      sign: s.faqOpen === i ? '\u2013' : '+',
+      maxH: s.faqOpen === i ? '320px' : '0px',
+      op: s.faqOpen === i ? 1 : 0,
+      toggle: () => this.setState(st => ({ faqOpen: st.faqOpen === i ? -1 : i }))
+    }));
+
+    const testimonials = [
+      { name: 'Ahmet Y.', initial: 'A', role: 'Kadıköy · Daire Renovasyonu', text: 'Evimizi anahtar teslim yenilediler. İşçilik tertemiz, ekip çok titiz ve söz verdikleri tarihte bitirdiler. Kesinlikle tavsiye ederim.' },
+      { name: 'Selin K.', initial: 'S', role: 'Üsküdar · Salon Boyası', text: 'Ercan usta ve ekibi çok ilgili. Keşif ücretsizdi, fiyat baştan netti, sürpriz maliyet çıkmadı. Sonuç beklediğimden de güzel oldu.' },
+      { name: 'Murat D.', initial: 'M', role: 'Çekmeköy · Dış Cephe', text: 'Apartmanımızın dış cephesini ve çatısını yaptılar. Hem hızlı hem de güven veren bir çalışma oldu. Teşekkürler.' }
+    ];
+
+    const galleryData = [
+      { label: '[ salon · iç boya ]' },
+      { label: '[ mutfak · tadilat ]' },
+      { label: '[ dış cephe · mantolama ]' },
+      { label: '[ çatı · onarım ]' },
+      { label: '[ banyo · renovasyon ]' },
+      { label: '[ cephe · boya ]' }
+    ];
+    const gallery = galleryData.map((g, i) => ({ label: g.label, open: () => this.openLightbox(i) }));
+
+    return {
+      desktop: !s.isMobile,
+      isMobile: s.isMobile,
+      menuOpen: s.menuOpen,
+      toggleMenu: this.toggleMenu, closeMenu: this.closeMenu, stopProp: this.stopProp,
+      navLinks,
+      stat1: s.stat1, stat2: s.stat2, stat3: s.stat3, setStatsRef: this.setStatsRef,
+      baPos: s.baPos, baInset: 100 - s.baPos, baRef: this.baRef,
+      onBaDown: this.onBaDown, onBaMove: this.onBaMove, onBaUp: this.onBaUp,
+      faqItems, testimonials, gallery,
+      lightboxOpen: s.lightbox != null,
+      lightbox: s.lightbox != null ? galleryData[s.lightbox] : { label: '' },
+      closeLightbox: this.closeLightbox,
+      fName: s.fName, fPhone: s.fPhone, fMsg: s.fMsg,
+      onFName: (e) => this.setState({ fName: e.target.value }),
+      onFPhone: (e) => this.setState({ fPhone: e.target.value }),
+      onFMsg: (e) => this.setState({ fMsg: e.target.value }),
+      submitForm: this.submitForm
+    };
+  }
+}
+</script>
+</body>
+</html>

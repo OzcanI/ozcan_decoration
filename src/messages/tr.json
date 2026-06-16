@@ -1,0 +1,137 @@
+{
+  "Nav": {
+    "services": "Hizmetler",
+    "gallery": "Galeri",
+    "testimonials": "Referanslar",
+    "faq": "SSS",
+    "contact": "İletişim",
+    "callNow": "Hemen Ara",
+    "menu": "Menü",
+    "close": "Kapat",
+    "writeWhatsapp": "WhatsApp'tan Yaz"
+  },
+  "Hero": {
+    "badge": "2000'den beri İstanbul'da — 25+ yıl tecrübe",
+    "titleLead": "Evinizi ve İş Yerinizi",
+    "titleHighlight": "Ustalıkla",
+    "titleTrail": "Yeniliyoruz",
+    "subtitle": "İç ve dış mekan boya-badana, dış cephe, çatı ve anahtar teslim komple tadilat. Çeyrek asırlık tecrübeyle, temiz işçilik ve <b>ücretsiz keşif</b> garantisiyle.",
+    "serviceArea": "Hizmet bölgesi: İstanbul ve çevre iller (Kocaeli, Yalova dahil)",
+    "ctaQuote": "Ücretsiz Keşif Al →",
+    "ctaWhatsapp": "WhatsApp'tan Yaz",
+    "floatTitle": "Ücretsiz Keşif",
+    "floatSub": "& yazılı fiyat teklifi",
+    "imageAlt": "Yenilenmiş salon"
+  },
+  "Stats": {
+    "yearsLabel": "Yıl Tecrübe (2000'den beri)",
+    "projectsLabel": "Tamamlanan Proje",
+    "free": "Ücretsiz",
+    "freeLabel": "Keşif & Teklif",
+    "satisfactionLabel": "Müşteri Memnuniyeti"
+  },
+  "Services": {
+    "eyebrow": "Hizmetlerimiz",
+    "title": "Uçtan uca renovasyon çözümleri",
+    "subtitle": "Tek bir ekiple, planlamadan teslimat ve temizliğe kadar her aşamada yanınızdayız.",
+    "customTitle": "Aradığınız hizmet listede yok mu?",
+    "customText": "Projenizi anlatın, size özel çözüm ve ücretsiz teklif sunalım.",
+    "customCta": "Bize Ulaşın →"
+  },
+  "Gallery": {
+    "eyebrow": "Galeri",
+    "title": "Önce & Sonra",
+    "subtitle": "Aradaki çizgiyi sürükleyerek dönüşümü kendiniz görün.",
+    "beforeLabel": "ÖNCE",
+    "afterLabel": "SONRA",
+    "completedTitle": "Tamamlanan Projeler",
+    "emptyState": "Yakında proje fotoğrafları eklenecek.",
+    "openAlt": "Büyüt"
+  },
+  "Process": {
+    "eyebrow": "Süreç",
+    "title": "4 Adımda Yenileme",
+    "subtitle": "Şeffaf, planlı ve zamanında. Baştan sona ne olduğunu bilirsiniz.",
+    "steps": [
+      {
+        "title": "Ücretsiz Keşif & Teklif",
+        "text": "Adresinize gelir, ölçü alır, ihtiyacınızı dinler ve net bir fiyat teklifi sunarız."
+      },
+      {
+        "title": "Planlama & Malzeme",
+        "text": "İş takvimini ve malzeme seçimini birlikte belirler, her aşamayı netleştiririz."
+      },
+      {
+        "title": "Uygulama",
+        "text": "Deneyimli ekibimizle işi zamanında, temiz ve özenli bir şekilde uygularız."
+      },
+      {
+        "title": "Teslim & Temizlik",
+        "text": "Alanı tertemiz teslim eder, memnuniyetinizi alana kadar takipte kalırız."
+      }
+    ]
+  },
+  "Testimonials": {
+    "eyebrow": "Referanslar",
+    "title": "Müşterilerimiz ne diyor?",
+    "emptyState": "Henüz yorum yok. İlk yorumu siz bırakın!",
+    "leaveReview": "Yorum Bırak"
+  },
+  "ReviewForm": {
+    "title": "Deneyiminizi paylaşın",
+    "subtitle": "Yorumunuz onaylandıktan sonra sitede yayınlanır.",
+    "name": "Ad Soyad",
+    "namePlaceholder": "Adınız Soyadınız",
+    "role": "Konum / Proje (opsiyonel)",
+    "rolePlaceholder": "örn. Kadıköy · Salon Boyası",
+    "rating": "Puan",
+    "message": "Yorumunuz",
+    "messagePlaceholder": "Bizimle çalışma deneyiminizi anlatın...",
+    "submit": "Yorumu Gönder",
+    "sending": "Gönderiliyor...",
+    "success": "Teşekkürler! Yorumunuz onay için alındı.",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+  },
+  "Faq": {
+    "eyebrow": "SSS",
+    "title": "Sık Sorulan Sorular"
+  },
+  "Contact": {
+    "eyebrow": "İletişim",
+    "title": "Ücretsiz keşif için bize yazın",
+    "formTitle": "Keşif Talebi Oluştur",
+    "formSubtitle": "Bilgilerinizi girin, mesajınız bize ulaşsın.",
+    "name": "Ad Soyad",
+    "namePlaceholder": "Adınız Soyadınız",
+    "phone": "Telefon",
+    "phonePlaceholder": "05xx xxx xx xx",
+    "message": "Mesajınız",
+    "messagePlaceholder": "Hangi işi yaptırmak istiyorsunuz? (örn. 2+1 daire komple boya)",
+    "submit": "Gönder",
+    "submitWhatsapp": "WhatsApp'tan Gönder",
+    "sending": "Gönderiliyor...",
+    "success": "Talebiniz alındı! En kısa sürede sizinle iletişime geçeceğiz.",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin veya bizi arayın.",
+    "infoTitle": "Hemen İletişime Geçin",
+    "infoSubtitle": "Telefon veya WhatsApp ile ulaşın; aynı gün ücretsiz keşif planlayalım.",
+    "phoneLabel": "Telefon",
+    "whatsappLabel": "WhatsApp",
+    "areaNote": "İstanbul (tüm ilçeler) ve çevre iller — Kocaeli, Yalova dahil",
+    "freeNote": "Ücretsiz keşif & yazılı fiyat teklifi — hiçbir ön ödeme yok"
+  },
+  "Footer": {
+    "tagline": "2000'den beri ustalıkla; boya, badana, dış cephe ve anahtar teslim renovasyon.",
+    "founderLabel": "Kurucu",
+    "servicesTitle": "Hizmetler",
+    "areasTitle": "Hizmet Bölgeleri",
+    "contactTitle": "İletişim",
+    "areas": ["İstanbul (tüm ilçeler)", "Kocaeli", "Yalova", "ve çevre iller"],
+    "whatsappLink": "WhatsApp ile yazın",
+    "rights": "Tüm hakları saklıdır.",
+    "founderLine": "Kurucu & Usta: Ercan Özcan"
+  },
+  "Common": {
+    "languageName": "Türkçe",
+    "switchTo": "English"
+  }
+}
